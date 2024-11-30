@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "mainFont";
+    src:url(./Assets/Norse-Bold.otf)
+}
+
+body{
+    margin: 0px;
+    font-family:'Times New Roman', Times, serif
+}
+#flex-container{
+    margin: 0;
+    background-color: #E5E7EB;
+    height: 100vh;
+    display: flex;
+}
+
+div>img {
+    width: 100%;
+    height: 100%;
+}
+
+#imgDiv{
+   max-width: 30rem;
+   flex-basis: 30rem;
+   position: relative;
+   height: 100vh;
+}
+
+#formDiv{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#formDiv > header > p {
+    font-size: 1.3rem;
+}
+
+label {
+    font-size: 50px;
+}
+
+input{
+    width: 10px;
+}
+
+#signUpForm{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 50%;
+}
+
+.formElementDiv{
+    margin: 5px 20px 5px 0px ;
+}
+
+#mainFormDiv{
+    padding: 20px 25px;
+    background-color: white;
+    margin: 0px;
+    box-shadow: 0px 2px 5px  rgb(49, 49, 49);
+}
+
+#mainFormDiv>form>legend{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(75, 75, 75);
+}
+
+.formElementDiv>label{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: rgb(114, 113, 113);
+}
+
+.formElementDiv>input{
+    /* appearance: none; */
+    border: 1px solid #E5E7EB;
+    border-radius: 2px;
+    width: 9rem;
+    font-size: 0.6rem;
+    padding: 2px 5px;
+}
+
+#formDiv>:first-child{
+padding: 0px 25px;
+font-weight: 700;
+font-size: 0.9rem;
+color: rgb(49, 49, 49);
+margin-bottom: 2rem;
+}
+
+#formDiv>:last-child>div>button{
+padding: 8px 25px;
+background-color: #596D48;
+font-size: 0.6rem;
+color: white;
+border: 0px solid #E5E7EB;
+border-radius: 5px;
+margin: 20px 0px 0px 20px;
+}
+
+#formDiv>:last-child>:last-child{
+    padding: 20px 0px 0px 20px;
+    font-size: 0.7rem;
+}
+
+#formDiv>:last-child>:last-child>a{
+    color: #596D48;
+}
+
+#logoDiv{
+    font-family: mainFont, system-ui;
+    color: white;
+    position: absolute;
+    top: 200px;
+    background-color: rgb(0, 0, 0, 0.4);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100%;
+    font-size: 3rem;
+    padding: 10px 0px;
+}
+
+#logoDiv>img{
+    width: 3rem;
+    height: auto;
+}
+
+#footerDiv{
+    font-size: 0.4rem;
+    color: white;
+    position: absolute;
+    bottom: 5px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+ 
+}
+#footerDiv>p>a{
+    font-size: 0.4rem;
+    color: white;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid rgb(5, 42, 248);
+  
+}
+
+input:user-invalid{
+    border: 1px solid rgb(248, 5, 17);
+}
